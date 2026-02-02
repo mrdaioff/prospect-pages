@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport"content="width=device-width, initial-scale=1.0">
+ <title>Domino's x Chef Works | Partnership Proposal</title>
+ <script src="https://cdn.tailwindcss.com"></script>
+ <script src="https://unpkg.com/lucide@latest"></script>
+ <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Open+Sans:wght@400;600&display=swap"rel="stylesheet">
+ <script>
+ tailwind.config = {
+ theme: {
+ extend: {
+ colors: {
+ dominoBlue: '#0B5394',
+ dominoRed: '#E31837',
+ cwCharcoal: '#333333',
+ cwGray: '#F4F4F4'
+ },
+ fontFamily: {
+ heading: ['Montserrat', 'sans-serif'],
+ body: ['Open Sans', 'sans-serif']
+ }
+ }
+ }
+ }
+ </script>
+ <style>
+ .hero-pattern {
+ background-color: #0B5394;
+ background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+ }
+ </style>
+</head>
+<body class="font-body text-gray-800 bg-white">
+
+ <!-- HEADER -->
+ <nav class="bg-white shadow-md sticky top-0 z-50">
+ <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+ <div class="flex justify-between items-center h-20">
+ <div class="flex items-center space-x-4">
+ <!-- Placeholder for Domino's Logo -->
+ <div class="flex items-center">
+ <div class="w-10 h-10 bg-dominoBlue rounded transform rotate-45 flex items-center justify-center text-white font-heading font-bold">
+ <div class="transform -rotate-45">D</div>
+ </div>
+ <div class="w-10 h-10 bg-dominoRed rounded transform rotate-45 flex items-center justify-center text-white font-heading font-bold ml-[-10px] border-2 border-white">
+ <div class="transform -rotate-45">.</div>
+ </div>
+ <span class="ml-4 text-2xl font-heading font-bold text-dominoBlue hidden sm:block">Domino's</span>
+ </div>
+ <span class="text-gray-400 text-xl font-light">x</span>
+ <!-- Placeholder for Chef Works -->
+ <div class="flex items-center">
+ <span class="text-xl font-heading font-bold text-cwCharcoal">Chef Works</span>
+ </div>
+ </div>
+ <button onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})"class="bg-dominoRed hover:bg-red-700 text-white font-bold py-2 px-6 rounded-full transition duration-300">
+ Get Samples
+ </button>
+ </div>
+ </div>
+ </nav>
+
+ <!-- HERO SECTION -->
+ <header class="hero-pattern text-white py-24">
+ <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+ <h1 class="text-4xl md:text-6xl font-heading font-extrabold mb-6 leading-tight">
+ Delivering Performance at <span class="text-dominoRed bg-white px-2 rounded">450°F</span>
+ </h1>
+ <p class="text-xl md:text-2xl mb-10 max-w-3xl mx-auto opacity-90">
+ From the heat of the makeline to the speed of delivery, equip your 540,000+ team members with gear built for the rush.
+ </p>
+ <div class="flex flex-col sm:flex-row justify-center gap-4">
+ <button onclick="document.getElementById('products').scrollIntoView({behavior: 'smooth'})"class="bg-white text-dominoBlue font-bold py-4 px-10 rounded-full shadow-lg hover:bg-gray-100 transition">
+ View The Collection
+ </button>
+ <button onclick="document.getElementById('calculator').scrollIntoView({behavior: 'smooth'})"class="border-2 border-white text-white font-bold py-4 px-10 rounded-full hover:bg-white hover:text-dominoBlue transition">
+ Calculate Savings
+ </button>
+ </div>
+ </div>
+ </header>
+
+ <!-- THE PERFECT FIT (PAIN POINTS) -->
+ <section id="products"class="py-20 bg-cwGray">
+ <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+ <div class="text-center mb-16">
+ <h2 class="text-3xl font-heading font-bold text-dominoBlue mb-4">Engineered for Heat & Speed</h2>
+ <p class="text-gray-600 max-w-2xl mx-auto">Domino's isn't just about pizza; it's about efficiency. Our apparel solves the "Heat & Speed"challenge with breathable tech and durable fabrics.</p>
+ </div>
+ 
+ <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+ <!-- Card 1 -->
+ <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300 transform hover:-translate-y-2">
+ <div class="h-48 bg-gray-200 flex items-center justify-center">
+ <i data-lucide="thermometer-sun"class="w-16 h-16 text-dominoRed"></i>
+ </div>
+ <div class="p-8">
+ <h3 class="text-xl font-bold text-gray-800 mb-2">The Cool Vent™ Makeline Shirt</h3>
+ <p class="text-gray-600 mb-4 text-sm">Combats oven heat with moisture-wicking panels. Keeps staff cool during peak rush hours.</p>
+ <ul class="text-sm text-gray-500 space-y-2">
+ <li class="flex items-center"><i data-lucide="check"class="w-4 h-4 text-green-500 mr-2"></i> 2-way airflow</li>
+ <li class="flex items-center"><i data-lucide="check"class="w-4 h-4 text-green-500 mr-2"></i> Stain release technology</li>
+ </ul>
+ </div>
+ </div>
+
+ <!-- Card 2 -->
+ <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300 transform hover:-translate-y-2">
+ <div class="h-48 bg-gray-200 flex items-center justify-center">
+ <i data-lucide="bike"class="w-16 h-16 text-dominoBlue"></i>
+ </div>
+ <div class="p-8">
+ <h3 class="text-xl font-bold text-gray-800 mb-2">The Rapid-Delivery Jacket</h3>
+ <p class="text-gray-600 mb-4 text-sm">Lightweight, weather-resistant outerwear designed for drivers moving in and out of vehicles.</p>
+ <ul class="text-sm text-gray-500 space-y-2">
+ <li class="flex items-center"><i data-lucide="check"class="w-4 h-4 text-green-500 mr-2"></i> High-visibility accents</li>
+ <li class="flex items-center"><i data-lucide="check"class="w-4 h-4 text-green-500 mr-2"></i> Durable ripstop fabric</li>
+ </ul>
+ </div>
+ </div>
+
+ <!-- Card 3 -->
+ <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300 transform hover:-translate-y-2">
+ <div class="h-48 bg-gray-200 flex items-center justify-center">
+ <i data-lucide="shirt"class="w-16 h-16 text-gray-700"></i>
+ </div>
+ <div class="p-8">
+ <h3 class="text-xl font-bold text-gray-800 mb-2">Custom Branded Aprons</h3>
+ <p class="text-gray-600 mb-4 text-sm">Reinforced stitching to withstand thousands of wash cycles while maintaining that bold Domino's Blue.</p>
+ <ul class="text-sm text-gray-500 space-y-2">
+ <li class="flex items-center"><i data-lucide="check"class="w-4 h-4 text-green-500 mr-2"></i> Color-fast guarantee</li>
+ <li class="flex items-center"><i data-lucide="check"class="w-4 h-4 text-green-500 mr-2"></i> Adjustable fit for all staff</li>
+ </ul>
+ </div>
+ </div>
+ </div>
+ </div>
+ </section>
+
+ <!-- ROI CALCULATOR -->
+ <section id="calculator"class="py-20 bg-white">
+ <div class="max-w-4xl mx-auto px-4">
+ <div class="bg-dominoBlue rounded-3xl shadow-2xl p-8 md:p-12 text-white">
+ <div class="text-center mb-10">
+ <h2 class="text-3xl font-heading font-bold mb-4">Uniform Lifecycle Savings Calculator</h2>
+ <p class="opacity-80">See how switching to higher-durability Chef Works gear impacts your bottom line compared to standard disposables.</p>
+ </div>
+
+ <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+ <div>
+ <label class="block text-sm font-bold mb-2 uppercase tracking-wide">Number of Staff (Franchise or Global)</label>
+ <div class="relative">
+ <input type="number"id="staffInput"value="50"min="1"class="w-full text-gray-900 p-4 rounded-lg font-bold text-xl focus:outline-none focus:ring-4 focus:ring-dominoRed transition">
+ <div class="absolute right-4 top-4 text-gray-400">
+ <i data-lucide="users"></i>
+ </div>
+ </div>
+ <p class="text-xs mt-4 opacity-70">*Based on avg. $150 annual savings per employee due to reduced replacement frequency.</p>
+ </div>
+
+ <div class="bg-white bg-opacity-10 rounded-xl p-6 border border-white border-opacity-20">
+ <h3 class="text-lg font-semibold mb-2">Projected Annual Savings</h3>
+ <div class="text-5xl font-heading font-extrabold text-white mb-2"id="savingsDisplay">$7,500</div>
+ <div class="text-sm text-green-300 font-bold flex items-center">
+ <i data-lucide="trending-up"class="w-4 h-4 mr-1"></i> 
+ <span id="brandEquity">+ Brand Consistency Boost</span>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </section>
+
+ <!-- SUSTAINABILITY -->
+ <section class="py-20 bg-gray-50">
+ <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+ <div class="flex flex-col md:flex-row items-center gap-12">
+ <div class="md:w-1/2">
+ <div class="inline-block bg-green-100 text-green-800 px-4 py-1 rounded-full text-sm font-bold mb-4">
+ Shared Values
+ </div>
+ <h2 class="text-3xl font-heading font-bold text-cwCharcoal mb-6">
+ Sustainable Ingredients, <span class="text-dominoBlue">Sustainable Threads.</span>
+ </h2>
+ <p class="text-gray-600 mb-6 leading-relaxed">
+ Just as Domino's is committed to responsible sourcing, Chef Works is dedicated to reducing our carbon footprint. Our RE: Collection uses recycled plastic bottles to create high-performance aprons and coats.
+ </p>
+ <div class="flex items-start space-x-4">
+ <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-100">
+ <i data-lucide="leaf"class="w-8 h-8 text-green-600 mb-2"></i>
+ <p class="text-sm font-bold">Recycled Fabrics</p>
+ </div>
+ <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-100">
+ <i data-lucide="globe"class="w-8 h-8 text-blue-600 mb-2"></i>
+ <p class="text-sm font-bold">Ethical Sourcing</p>
+ </div>
+ </div>
+ </div>
+ <div class="md:w-1/2 relative">
+ <div class="absolute inset-0 bg-dominoRed rounded-2xl transform rotate-3 opacity-10"></div>
+ <div class="relative bg-white p-8 rounded-2xl shadow-xl border-t-4 border-dominoBlue">
+ <h3 class="text-xl font-bold mb-4">The Impact</h3>
+ <p class="text-gray-600 mb-4">
+ "Aligning our uniform supply chain with our corporate responsibility goals helps us tell a consistent story from the farm to the pizza box."
+ </p>
+ <div class="h-1 w-20 bg-dominoRed rounded"></div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </section>
+
+ <!-- CTA SECTION -->
+ <section id="contact"class="py-24 bg-white text-center">
+ <div class="max-w-3xl mx-auto px-4">
+ <h2 class="text-4xl font-heading font-bold text-cwCharcoal mb-6">Ready to Upgrade the Domino's Uniform?</h2>
+ <p class="text-xl text-gray-600 mb-10">
+ Let's build a custom program that matches the speed and quality of your brand. Request a personalized sample kit for your franchise operations team.
+ </p>
+ <form class="max-w-md mx-auto space-y-4 text-left">
+ <div>
+ <label class="block text-sm font-medium text-gray-700">Email Address</label>
+ <input type="email"placeholder="name@dominos.com"class="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-3 border focus:border-dominoBlue focus:ring-dominoBlue">
+ </div>
+ <button type="button"class="w-full bg-dominoRed text-white font-bold py-4 rounded-lg shadow-lg hover:bg-red-700 transition transform hover:scale-105">
+ Request Sample Kit
+ </button>
+ <p class="text-center text-xs text-gray-400 mt-4">No commitment required. Free shipping on sample kits.</p>
+ </form>
+ </div>
+ </section>
+
+ <!-- FOOTER -->
+ <footer class="bg-cwCharcoal text-gray-400 py-12">
+ <div class="max-w-7xl mx-auto px-4 text-center">
+ <div class="flex justify-center items-center space-x-2 mb-8">
+ <span class="font-heading font-bold text-white text-xl">Chef Works</span>
+ <span>x</span>
+ <span class="font-heading font-bold text-white text-xl">Domino's</span>
+ </div>
+ <p class="text-sm">&copy; 2023 Chef Works, Inc. All rights reserved. This is a conceptual proposal page.</p>
+ </div>
+ </footer>
+
+ <!-- SCRIPTS -->
+ <script>
+ // Initialize Icons
+ lucide.createIcons();
+
+ // Calculator Logic
+ const staffInput = document.getElementById('staffInput');
+ const savingsDisplay = document.getElementById('savingsDisplay');
+ const SAVINGS_PER_HEAD = 150;
+
+ function updateSavings() {
+ const count = parseInt(staffInput.value) || 0;
+ const total = count * SAVINGS_PER_HEAD;
+ // Format currency
+ const formatted = new Intl.NumberFormat('en-US', {
+ style: 'currency',
+ currency: 'USD',
+ maximumFractionDigits: 0
+ }).format(total);
+ 
+ savingsDisplay.textContent = formatted;
+ }
+
+ staffInput.addEventListener('input', updateSavings);
+ </script>
+</body>
+</html>
