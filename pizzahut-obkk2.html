@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport"content="width=device-width, initial-scale=1.0">
+ <title>Chef Works x Pizza Hut | Partnership Proposal</title>
+ 
+ <!-- Google Fonts: Oswald (Headings) & Roboto (Body) for QSR Segment -->
+ <link rel="preconnect"href="https://fonts.googleapis.com">
+ <link rel="preconnect"href="https://fonts.gstatic.com"crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Roboto:wght@300;400;500;700&display=swap"rel="stylesheet">
+ 
+ <!-- AOS Animation Library -->
+ <link href="https://unpkg.com/aos@2.3.1/dist/aos.css"rel="stylesheet">
+ 
+ <!-- Tailwind CSS -->
+ <script src="https://cdn.tailwindcss.com"></script>
+ 
+ <!-- Tailwind Config for Custom Brand Color -->
+ <script>
+ tailwind.config = {
+ theme: {
+ extend: {
+ colors: {
+ brand: '#EE3124', // Pizza Hut Red
+ brandDark: '#b91c12',
+ },
+ fontFamily: {
+ heading: ['Oswald', 'sans-serif'],
+ body: ['Roboto', 'sans-serif'],
+ }
+ }
+ }
+ }
+ </script>
+
+ <!-- Lucide Icons -->
+ <script src="https://unpkg.com/lucide@latest"></script>
+
+ <style>
+ .glass-header {
+ background: rgba(255, 255, 255, 0.90);
+ backdrop-filter: blur(12px);
+ -webkit-backdrop-filter: blur(12px);
+ border-bottom: 1px solid rgba(0,0,0,0.05);
+ }
+ .hero-overlay {
+ background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.4));
+ }
+ </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-body antialiased overflow-x-hidden">
+
+ <!-- HEADER -->
+ <header class="glass-header fixed w-full top-0 z-50 transition-all duration-300">
+ <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+ <div class="flex justify-between items-center h-20">
+ <!-- Logos -->
+ <div class="flex items-center space-x-4">
+ <img src="https://logo.clearbit.com/pizzahut.com"alt="Pizza Hut Logo"class="h-10 w-auto object-contain">
+ <span class="text-gray-400 font-light text-xl">✕</span>
+ <img src="https://logo.clearbit.com/chefworks.com"alt="Chef Works Logo"class="h-10 w-auto object-contain">
+ </div>
+ 
+ <!-- CTA -->
+ <div class="hidden md:block">
+ <button class="bg-brand hover:bg-brandDark text-white font-heading font-bold uppercase tracking-wide px-6 py-2.5 rounded shadow-lg transition-transform transform hover:scale-105">
+ Partner Portal
+ </button>
+ </div>
+ </div>
+ </div>
+ </header>
+
+ <!-- HERO SECTION -->
+ <section class="relative h-[85vh] flex items-center justify-center">
+ <!-- Background Image: Pizza/Kitchen Vibe -->
+ <div class="absolute inset-0 z-0">
+ <img src="https://images.unsplash.com/photo-1581539250439-c96689b516dd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
+ alt="Busy Pizza Kitchen"
+ class="w-full h-full object-cover">
+ <div class="hero-overlay absolute inset-0"></div>
+ </div>
+
+ <div class="relative z-10 text-center px-4 max-w-4xl mx-auto"data-aos="fade-up"data-aos-duration="1000">
+ <h1 class="text-5xl md:text-7xl font-heading font-bold text-white mb-6 leading-tight drop-shadow-lg">
+ The Uniform Standard for <span class="text-brand">Pizza Hut</span>.
+ </h1>
+ <p class="text-xl md:text-2xl text-gray-100 mb-10 max-w-2xl mx-auto font-light">
+ Bold & Playful meets professional performance. Equip your team with gear built to handle the heat of the oven and the speed of service.
+ </p>
+ <div class="flex flex-col sm:flex-row justify-center gap-4">
+ <button class="bg-brand hover:bg-brandDark text-white font-heading font-bold uppercase tracking-wider px-8 py-4 rounded-lg shadow-xl transition-all hover:-translate-y-1">
+ View Collection
+ </button>
+ <button class="bg-white/10 hover:bg-white/20 backdrop-blur-sm border-2 border-white text-white font-heading font-bold uppercase tracking-wider px-8 py-4 rounded-lg transition-all">
+ Talk to an Expert
+ </button>
+ </div>
+ </div>
+ </section>
+
+ <!-- PERFECT FIT SECTION -->
+ <section class="py-24 bg-white">
+ <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+ <div class="text-center mb-16"data-aos="fade-up">
+ <h2 class="text-sm font-bold text-brand tracking-widest uppercase mb-3">The Perfect Fit</h2>
+ <h3 class="text-4xl md:text-5xl font-heading font-bold text-gray-900">Engineered for the QSR Hustle</h3>
+ </div>
+
+ <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+ <!-- Card 1: Pain Solver (Heat & Speed) -->
+ <div class="bg-gray-50 rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 group"data-aos="fade-up"data-aos-delay="100">
+ <div class="w-14 h-14 bg-brand/10 rounded-full flex items-center justify-center mb-6 group-hover:bg-brand transition-colors">
+ <i data-lucide="thermometer-sun"class="w-8 h-8 text-brand group-hover:text-white"></i>
+ </div>
+ <h4 class="text-2xl font-heading font-bold text-gray-900 mb-4">Cool Vent™ Technology</h4>
+ <p class="text-gray-600 leading-relaxed">
+ Pizza ovens generate intense heat. Our proprietary Cool Vent™ fabric wicks moisture and increases airflow, keeping your team cool and focused on speed.
+ </p>
+ </div>
+
+ <!-- Card 2: The Staple (Aprons & Coats) -->
+ <div class="bg-gray-50 rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 group"data-aos="fade-up"data-aos-delay="200">
+ <div class="w-14 h-14 bg-brand/10 rounded-full flex items-center justify-center mb-6 group-hover:bg-brand transition-colors">
+ <i data-lucide="shirt"class="w-8 h-8 text-brand group-hover:text-white"></i>
+ </div>
+ <h4 class="text-2xl font-heading font-bold text-gray-900 mb-4">Urban Collection</h4>
+ <p class="text-gray-600 leading-relaxed">
+ Street-inspired designs that match Pizza Hut's bold and playful vibe. Durable denim and canvas aprons that hide stains and look sharp shift after shift.
+ </p>
+ </div>
+
+ <!-- Card 3: The Value (Reliability) -->
+ <div class="bg-gray-50 rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 group"data-aos="fade-up"data-aos-delay="300">
+ <div class="w-14 h-14 bg-brand/10 rounded-full flex items-center justify-center mb-6 group-hover:bg-brand transition-colors">
+ <i data-lucide="globe"class="w-8 h-8 text-brand group-hover:text-white"></i>
+ </div>
+ <h4 class="text-2xl font-heading font-bold text-gray-900 mb-4">Global Scale</h4>
+ <p class="text-gray-600 leading-relaxed">
+ With over 300,000 employees, you need a partner who can deliver. Our global supply chain ensures consistency across every franchise location.
+ </p>
+ </div>
+ </div>
+ </div>
+ </section>
+
+ <!-- ROI CALCULATOR -->
+ <section class="py-20 bg-gray-900 text-white overflow-hidden relative">
+ <!-- Decorative Elements -->
+ <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-brand opacity-10 rounded-full blur-3xl"></div>
+ <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 bg-brand opacity-10 rounded-full blur-3xl"></div>
+
+ <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+ <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+ <div data-aos="fade-right">
+ <h2 class="text-4xl md:text-5xl font-heading font-bold mb-6">The ROI of Quality</h2>
+ <p class="text-gray-400 text-lg mb-8">
+ Cheap uniforms need replacing every few months. Chef Works gear is built to last longer, reducing your total cost of ownership significantly over time.
+ </p>
+ <ul class="space-y-4">
+ <li class="flex items-center space-x-3">
+ <i data-lucide="check-circle-2"class="text-brand w-6 h-6"></i>
+ <span>Extended garment lifecycle</span>
+ </li>
+ <li class="flex items-center space-x-3">
+ <i data-lucide="check-circle-2"class="text-brand w-6 h-6"></i>
+ <span>Reduced administrative re-ordering costs</span>
+ </li>
+ <li class="flex items-center space-x-3">
+ <i data-lucide="check-circle-2"class="text-brand w-6 h-6"></i>
+ <span>Employee satisfaction & retention</span>
+ </li>
+ </ul>
+ </div>
+
+ <div class="bg-white/5 backdrop-blur-md rounded-2xl p-8 border border-white/10"data-aos="fade-up">
+ <h3 class="text-2xl font-heading font-bold mb-6">Uniform Lifecycle Savings</h3>
+ 
+ <div class="mb-8">
+ <label class="block text-sm font-medium text-gray-300 mb-2 uppercase tracking-wider">Total Staff Count</label>
+ <div class="relative">
+ <input type="number"id="employeeInput"value="300000"
+ class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-brand focus:border-transparent transition-all font-mono text-lg"
+ placeholder="Enter number of employees">
+ <i data-lucide="users"class="absolute right-4 top-3.5 text-gray-500 w-5 h-5"></i>
+ </div>
+ </div>
+
+ <div class="bg-gray-800 rounded-xl p-6 text-center border border-gray-700">
+ <p class="text-gray-400 text-sm mb-2">Estimated Annual Savings Potential</p>
+ <div id="savingsResult"class="text-5xl font-heading font-bold text-brand tracking-tight">
+ $45,000,000
+ </div>
+ <p class="text-xs text-gray-500 mt-2">*Based on avg. replacement reduction of $150/employee/year</p>
+ </div>
+ </div>
+ </div>
+ </div>
+ </section>
+
+ <!-- CUSTOMIZATION SECTION (Sustainability=False) -->
+ <section class="py-24 bg-white">
+ <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+ <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+ <div class="order-2 lg:order-1"data-aos="fade-right">
+ <img src="https://images.unsplash.com/photo-1556910103-1c02745a30bf?ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80"
+ alt="Custom Embroidery"
+ class="rounded-2xl shadow-2xl object-cover h-[500px] w-full">
+ </div>
+ <div class="order-1 lg:order-2"data-aos="fade-left">
+ <div class="inline-block bg-brand/10 text-brand font-bold px-4 py-1 rounded-full text-sm mb-6">
+ BRAND IDENTITY
+ </div>
+ <h2 class="text-4xl md:text-5xl font-heading font-bold text-gray-900 mb-6">
+ Wear Your Brand with Pride
+ </h2>
+ <p class="text-lg text-gray-600 mb-8">
+ Your brand is iconic. We ensure every stitch reflects the "Bold & Playful"spirit of Pizza Hut. From custom color-matching to high-quality embroidery of the famous red roof, we make your team walking ambassadors.
+ </p>
+ <div class="grid grid-cols-2 gap-6">
+ <div class="border-l-4 border-brand pl-4">
+ <h4 class="font-bold text-gray-900 text-lg">Custom Embroidery</h4>
+ <p class="text-sm text-gray-500">Precision logo placement</p>
+ </div>
+ <div class="border-l-4 border-brand pl-4">
+ <h4 class="font-bold text-gray-900 text-lg">Color Matching</h4>
+ <p class="text-sm text-gray-500">Exact Pantone #EE3124 match</p>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </section>
+
+ <!-- CTA FOOTER -->
+ <footer class="bg-gray-50 pt-20 pb-12 border-t border-gray-200">
+ <div class="max-w-4xl mx-auto text-center px-4"data-aos="zoom-in">
+ <h2 class="text-4xl md:text-5xl font-heading font-bold text-gray-900 mb-6">
+ Ready to Upgrade the Pizza Hut Team?
+ </h2>
+ <p class="text-xl text-gray-600 mb-10">
+ Experience the difference in quality, comfort, and style tailored specifically for your QSR needs.
+ </p>
+ <button class="bg-brand hover:bg-brandDark text-white text-lg font-heading font-bold uppercase tracking-widest px-10 py-5 rounded-lg shadow-xl transition-all transform hover:-translate-y-1 hover:shadow-2xl">
+ Request Sample Kit for Pizza Hut
+ </button>
+ <p class="mt-8 text-gray-400 text-sm">
+ © 2024 Chef Works, Inc. Proposal prepared exclusively for Pizza Hut.
+ </p>
+ </div>
+ </footer>
+
+ <!-- SCRIPTS -->
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ <script>
+ // Initialize Animations
+ AOS.init({
+ once: true,
+ offset: 100,
+ duration: 800,
+ easing: 'ease-out-cubic',
+ });
+
+ // Initialize Lucide Icons
+ lucide.createIcons();
+
+ // Calculator Logic
+ const employeeInput = document.getElementById('employeeInput');
+ const savingsResult = document.getElementById('savingsResult');
+
+ function updateSavings() {
+ const count = parseInt(employeeInput.value) || 0;
+ const savings = count * 150;
+ // Format as currency
+ savingsResult.textContent = new Intl.NumberFormat('en-US', {
+ style: 'currency',
+ currency: 'USD',
+ maximumFractionDigits: 0
+ }).format(savings);
+ }
+
+ // Event Listener
+ employeeInput.addEventListener('input', updateSavings);
+ 
+ // Initial Run
+ updateSavings();
+ </script>
+</body>
+</html>
