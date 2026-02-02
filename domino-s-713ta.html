@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport"content="width=device-width, initial-scale=1.0">
+ <title>Chef Works x Domino's</title>
+ 
+ <!-- Fonts: Oswald (Headings) & Roboto (Body) for QSR Segment -->
+ <link rel="preconnect"href="https://fonts.googleapis.com">
+ <link rel="preconnect"href="https://fonts.gstatic.com"crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Roboto:wght@300;400;500;700&display=swap"rel="stylesheet">
+ 
+ <!-- AOS Animation Library -->
+ <link href="https://unpkg.com/aos@2.3.1/dist/aos.css"rel="stylesheet">
+ 
+ <!-- Tailwind CSS -->
+ <script src="https://cdn.tailwindcss.com"></script>
+ <script>
+ tailwind.config = {
+ theme: {
+ extend: {
+ colors: {
+ brand: '#0B5394', // Domino's Blue
+ },
+ fontFamily: {
+ sans: ['Roboto', 'sans-serif'],
+ heading: ['Oswald', 'sans-serif'],
+ }
+ }
+ }
+ }
+ </script>
+ 
+ <!-- Lucide Icons -->
+ <script src="https://unpkg.com/lucide@latest"></script>
+
+ <style>
+ body {
+ font-family: 'Roboto', sans-serif;
+ }
+ h1, h2, h3, h4, h5, h6 {
+ font-family: 'Oswald', sans-serif;
+ }
+ .glass-header {
+ background: rgba(255, 255, 255, 0.90);
+ backdrop-filter: blur(12px);
+ -webkit-backdrop-filter: blur(12px);
+ }
+ </style>
+</head>
+<body class="bg-gray-50 text-slate-800 overflow-x-hidden">
+
+ <!-- Header -->
+ <header class="glass-header fixed w-full top-0 z-50 border-b border-gray-100 transition-all duration-300">
+ <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+ <div class="flex justify-between items-center h-20">
+ <!-- Logos -->
+ <div class="flex items-center space-x-6">
+ <img src="https://logo.clearbit.com/dominos.com"alt="Domino's Logo"class="h-10 w-auto object-contain">
+ <span class="text-gray-400 font-light text-xl">✕</span>
+ <img src="https://logo.clearbit.com/chefworks.com"alt="Chef Works Logo"class="h-10 w-auto object-contain">
+ </div>
+ <!-- Partner Button -->
+ <div class="hidden md:block">
+ <button class="bg-brand hover:opacity-90 text-white px-6 py-2.5 rounded-full font-medium transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+ Partner Portal
+ </button>
+ </div>
+ </div>
+ </div>
+ </header>
+
+ <!-- Hero Section -->
+ <section class="relative h-[90vh] flex items-center justify-center overflow-hidden">
+ <!-- Background Image: Pizza/QSR related -->
+ <div class="absolute inset-0 z-0">
+ <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+ alt="Professional Pizza Kitchen"
+ class="w-full h-full object-cover">
+ <div class="absolute inset-0 bg-gradient-to-r from-slate-900/90 to-slate-900/40"></div>
+ </div>
+
+ <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center"data-aos="fade-up"data-aos-duration="1000">
+ <span class="inline-block py-1 px-3 rounded-full bg-brand/20 border border-brand/40 text-blue-200 text-sm font-semibold mb-6 tracking-wider uppercase">
+ Exclusive Partnership Proposal
+ </span>
+ <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 uppercase tracking-tight">
+ The Uniform Standard<br>for <span class="text-blue-400">Domino's</span>.
+ </h1>
+ <p class="text-xl md:text-2xl text-gray-200 mb-10 max-w-2xl mx-auto font-light">
+ Connect your Bold & Clean vibe to professional gear designed for high-volume performance.
+ </p>
+ <div class="flex flex-col sm:flex-row justify-center gap-4">
+ <button onclick="document.getElementById('calculator').scrollIntoView({behavior: 'smooth'})"class="bg-brand text-white px-8 py-4 rounded-md font-bold text-lg shadow-lg hover:bg-white hover:text-brand transition-all">
+ Calculate Savings
+ </button>
+ <button class="px-8 py-4 rounded-md font-bold text-lg border-2 border-white text-white hover:bg-white/10 transition-all">
+ View Collection
+ </button>
+ </div>
+ </div>
+ </section>
+
+ <!-- The Perfect Fit Section -->
+ <section class="py-24 bg-white">
+ <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+ <div class="text-center mb-16"data-aos="fade-up">
+ <h2 class="text-3xl md:text-5xl font-bold text-slate-900 mb-4 uppercase">Engineered for QSR Excellence</h2>
+ <p class="text-gray-500 text-lg">Tailored specifically for the demands of the pizza delivery industry.</p>
+ </div>
+
+ <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+ <!-- Card 1: Pain Solver (Heat & Speed) -->
+ <div class="group p-8 bg-gray-50 rounded-2xl border border-gray-100 hover:border-brand/30 hover:shadow-2xl transition-all duration-300"data-aos="fade-up"data-aos-delay="100">
+ <div class="w-14 h-14 bg-brand/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-brand transition-colors">
+ <i data-lucide="thermometer-snowflake"class="w-7 h-7 text-brand group-hover:text-white"></i>
+ </div>
+ <h3 class="text-2xl font-bold mb-3">Cool Vent™ Technology</h3>
+ <p class="text-gray-600 leading-relaxed">
+ Directly addressing the challenge of <span class="font-semibold text-brand">Heat & Speed</span>. Our proprietary moisture-wicking fabric keeps staff cool near ovens and active during rushes.
+ </p>
+ </div>
+
+ <!-- Card 2: The Staple (QSR/Aprons) -->
+ <div class="group p-8 bg-gray-50 rounded-2xl border border-gray-100 hover:border-brand/30 hover:shadow-2xl transition-all duration-300"data-aos="fade-up"data-aos-delay="200">
+ <div class="w-14 h-14 bg-brand/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-brand transition-colors">
+ <i data-lucide="shirt"class="w-7 h-7 text-brand group-hover:text-white"></i>
+ </div>
+ <h3 class="text-2xl font-bold mb-3">The QSR Standard</h3>
+ <p class="text-gray-600 leading-relaxed">
+ Durable, stain-resistant aprons and lightweight shirts designed for the rigors of dough tossing, topping, and delivery. Built to last wash after wash.
+ </p>
+ </div>
+
+ <!-- Card 3: The Value (Scale) -->
+ <div class="group p-8 bg-gray-50 rounded-2xl border border-gray-100 hover:border-brand/30 hover:shadow-2xl transition-all duration-300"data-aos="fade-up"data-aos-delay="300">
+ <div class="w-14 h-14 bg-brand/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-brand transition-colors">
+ <i data-lucide="globe"class="w-7 h-7 text-brand group-hover:text-white"></i>
+ </div>
+ <h3 class="text-2xl font-bold mb-3">Global Supply Chain</h3>
+ <p class="text-gray-600 leading-relaxed">
+ With over <span class="font-semibold text-brand">540,000</span> employees, you need a partner who can deliver. Our global infrastructure ensures inventory reliability across all regions.
+ </p>
+ </div>
+ </div>
+ </div>
+ </section>
+
+ <!-- ROI Calculator -->
+ <section id="calculator"class="py-24 bg-slate-900 text-white relative overflow-hidden">
+ <!-- Background decorative blob -->
+ <div class="absolute top-0 right-0 w-1/2 h-full bg-brand/10 blur-3xl rounded-full -translate-y-1/2 translate-x-1/4"></div>
+
+ <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+ <div class="bg-white/5 backdrop-blur-lg border border-white/10 rounded-3xl p-8 md:p-12 shadow-2xl"data-aos="zoom-in">
+ <div class="text-center mb-10">
+ <h2 class="text-3xl md:text-5xl font-bold mb-4">Uniform Lifecycle Savings</h2>
+ <p class="text-gray-300">See how durable gear impacts your bottom line.</p>
+ </div>
+
+ <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+ <div>
+ <label class="block text-sm font-medium text-gray-400 mb-2 uppercase tracking-wider">Total Staff Count</label>
+ <div class="relative">
+ <i data-lucide="users"class="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 w-5 h-5"></i>
+ <input type="number"id="staffInput"value="540000"
+ class="w-full bg-slate-800 border border-slate-700 rounded-xl py-4 pl-12 pr-4 text-2xl font-bold text-white focus:ring-2 focus:ring-brand focus:border-transparent outline-none transition-all">
+ </div>
+ <p class="text-xs text-gray-500 mt-3">*Based on estimated global headcount</p>
+ </div>
+
+ <div class="text-center md:text-left">
+ <div class="text-sm font-medium text-gray-400 mb-2 uppercase tracking-wider">Estimated Annual Value</div>
+ <div class="text-4xl md:text-6xl font-bold text-brand"id="savingsOutput">$81,000,000</div>
+ <p class="text-sm text-gray-400 mt-2">in potential inventory efficiency & longevity savings</p>
+ </div>
+ </div>
+ </div>
+ </div>
+ </section>
+
+ <!-- Sustainability Section (Conditional: True) -->
+ <section class="py-24 bg-green-50">
+ <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+ <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+ <div data-aos="fade-right">
+ <div class="inline-flex items-center space-x-2 px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm font-semibold mb-6">
+ <i data-lucide="leaf"class="w-4 h-4"></i>
+ <span>Chef Works RE:Collection</span>
+ </div>
+ <h2 class="text-4xl md:text-5xl font-bold text-slate-900 mb-6 uppercase">Shared Values,<br>Sustainable Future</h2>
+ <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+ Domino's commitment to responsibility matches our vision. Equip your team with our RE:Collection—aprons and coats made from recycled plastic bottles. It's the perfect blend of performance and planet-first thinking.
+ </p>
+ <ul class="space-y-4 mb-8">
+ <li class="flex items-center text-gray-700">
+ <i data-lucide="check-circle-2"class="w-5 h-5 text-green-600 mr-3"></i>
+ Recycled Polyester blends
+ </li>
+ <li class="flex items-center text-gray-700">
+ <i data-lucide="check-circle-2"class="w-5 h-5 text-green-600 mr-3"></i>
+ Reduced carbon footprint per uniform
+ </li>
+ <li class="flex items-center text-gray-700">
+ <i data-lucide="check-circle-2"class="w-5 h-5 text-green-600 mr-3"></i>
+ Global Recycled Standard (GRS) Certified
+ </li>
+ </ul>
+ </div>
+ <div class="relative"data-aos="fade-left">
+ <div class="absolute -inset-4 bg-green-200/50 rounded-3xl rotate-3"></div>
+ <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?ixlib=rb-4.0.3&auto=format&fit=crop&w=1613&q=80"
+ alt="Sustainable Fabrics"
+ class="relative rounded-2xl shadow-2xl w-full object-cover h-[500px]">
+ </div>
+ </div>
+ </div>
+ </section>
+
+ <!-- CTA Footer -->
+ <footer class="bg-white py-20 border-t border-gray-100">
+ <div class="max-w-4xl mx-auto px-4 text-center"data-aos="fade-up">
+ <h2 class="text-4xl md:text-5xl font-bold text-slate-900 mb-8 uppercase">Ready to Upgrade?</h2>
+ <p class="text-xl text-gray-500 mb-10">Experience the quality difference firsthand. Let's get a sample kit in the hands of your decision makers.</p>
+ <button class="bg-brand text-white text-lg font-bold px-10 py-5 rounded-md shadow-xl hover:bg-slate-900 hover:shadow-2xl transition-all transform hover:-translate-y-1">
+ Request Sample Kit for Domino's
+ </button>
+ <div class="mt-12 flex items-center justify-center space-x-8 opacity-50 grayscale">
+ <img src="https://logo.clearbit.com/dominos.com"class="h-8">
+ <span class="text-2xl">+</span>
+ <img src="https://logo.clearbit.com/chefworks.com"class="h-8">
+ </div>
+ </div>
+ </footer>
+
+ <!-- Scripts -->
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ <script>
+ // Initialize AOS
+ AOS.init({
+ once: true,
+ offset: 100,
+ duration: 800,
+ });
+
+ // Initialize Lucide Icons
+ lucide.createIcons();
+
+ // Calculator Logic
+ document.addEventListener('DOMContentLoaded', function() {
+ const staffInput = document.getElementById('staffInput');
+ const savingsOutput = document.getElementById('savingsOutput');
+ 
+ function calculateSavings() {
+ const count = parseInt(staffInput.value) || 0;
+ const savings = count * 150;
+ // Format currency
+ savingsOutput.innerText = new Intl.NumberFormat('en-US', {
+ style: 'currency',
+ currency: 'USD',
+ maximumFractionDigits: 0
+ }).format(savings);
+ }
+
+ // Event listeners
+ staffInput.addEventListener('input', calculateSavings);
+ 
+ // Initial calculation
+ calculateSavings();
+ });
+ </script>
+</body>
+</html>
