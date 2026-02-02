@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport"content="width=device-width, initial-scale=1.0">
+ <title>Chipotle x Chef Works | Gear with Integrity</title>
+ <script src="https://cdn.tailwindcss.com"></script>
+ <script src="https://unpkg.com/lucide@latest"></script>
+ <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Lato:wght@400;700&display=swap"rel="stylesheet">
+ <script>
+ tailwind.config = {
+ theme: {
+ extend: {
+ colors: {
+ chipotle: {
+ red: '#AD2012',
+ brown: '#451400',
+ green: '#8C8C5D',
+ cream: '#F4F1EA',
+ dark: '#2D2D2D'
+ }
+ },
+ fontFamily: {
+ display: ['Oswald', 'sans-serif'],
+ body: ['Lato', 'sans-serif'],
+ }
+ }
+ }
+ }
+ </script>
+ <style>
+ .texture-bg {
+ background-image: url('data:image/svg+xml,%3Csvg width="100"height="100"viewBox="0 0 100 100"xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z"fill="%239C92AC"fill-opacity="0.05"fill-rule="evenodd"/%3E%3C/svg%3E');
+ }
+ </style>
+</head>
+<body class="font-body bg-chipotle-cream text-chipotle-dark">
+
+ <!-- Header -->
+ <header class="bg-chipotle-brown py-4 shadow-lg sticky top-0 z-50">
+ <div class="container mx-auto px-6 flex justify-center items-center space-x-6">
+ <div class="text-white font-display font-bold text-2xl tracking-widest uppercase">Chipotle</div>
+ <span class="text-chipotle-red text-xl">✕</span>
+ <div class="text-white font-display font-bold text-2xl tracking-widest uppercase">Chef Works</div>
+ </div>
+ </header>
+
+ <!-- Hero Section -->
+ <section class="relative bg-chipotle-brown text-white py-24 texture-bg">
+ <div class="absolute inset-0 bg-black opacity-30"></div>
+ <div class="container mx-auto px-6 relative z-10 text-center">
+ <h1 class="font-display text-5xl md:text-7xl font-bold uppercase mb-4 leading-tight">
+ Gear With <span class="text-chipotle-red">Integrity</span>
+ </h1>
+ <p class="text-xl md:text-2xl text-gray-200 max-w-2xl mx-auto mb-8">
+ Real ingredients deserve real apparel. Elevating the Chipotle crew with sustainable, durable, and breathable gear designed for the grill, the line, and the future.
+ </p>
+ <a href="#contact"class="inline-block bg-chipotle-red hover:bg-red-700 text-white font-display font-bold uppercase tracking-wider py-4 px-8 rounded shadow-lg transition transform hover:-translate-y-1">
+ Upgrade Your Crew
+ </a>
+ </div>
+ </section>
+
+ <!-- The Perfect Fit Section -->
+ <section class="py-20">
+ <div class="container mx-auto px-6">
+ <div class="text-center mb-16">
+ <h2 class="font-display text-4xl font-bold text-chipotle-brown uppercase mb-4">Engineered for the Line</h2>
+ <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+ Chipotle's high-volume, fresh-prep environment demands more than standard uniforms. We solve your team's pain points with precision engineering.
+ </p>
+ </div>
+
+ <div class="grid md:grid-cols-3 gap-10">
+ <!-- Card 1: Heat Management -->
+ <div class="bg-white p-8 rounded-lg shadow-xl border-t-4 border-chipotle-red">
+ <div class="flex justify-center mb-6">
+ <i data-lucide="thermometer-sun"class="w-16 h-16 text-chipotle-red"></i>
+ </div>
+ <h3 class="font-display text-2xl font-bold text-center mb-3 uppercase">Cool Vent™ Technology</h3>
+ <p class="text-gray-600 text-center">
+ <strong>The Pain Point:</strong> Grill masters facing high heat.
+ <br><br>
+ <strong>The Solution:</strong> Our proprietary Cool Vent™ panels wick moisture and circulate air, keeping staff cool while they fire up the steak and chicken.
+ </p>
+ </div>
+
+ <!-- Card 2: Durability & Stains -->
+ <div class="bg-white p-8 rounded-lg shadow-xl border-t-4 border-chipotle-brown">
+ <div class="flex justify-center mb-6">
+ <i data-lucide="shield-check"class="w-16 h-16 text-chipotle-brown"></i>
+ </div>
+ <h3 class="font-display text-2xl font-bold text-center mb-3 uppercase">Stain Release Fabrics</h3>
+ <p class="text-gray-600 text-center">
+ <strong>The Pain Point:</strong> Salsa, guac, and adobo stains affecting brand appearance.
+ <br><br>
+ <strong>The Solution:</strong> Industrial-strength durability that maintains a crisp, professional look wash after wash. Built for the "Real Food"mess.
+ </p>
+ </div>
+
+ <!-- Card 3: Brand Identity -->
+ <div class="bg-white p-8 rounded-lg shadow-xl border-t-4 border-chipotle-green">
+ <div class="flex justify-center mb-6">
+ <i data-lucide="palette"class="w-16 h-16 text-chipotle-green"></i>
+ </div>
+ <h3 class="font-display text-2xl font-bold text-center mb-3 uppercase">Custom Urban Style</h3>
+ <p class="text-gray-600 text-center">
+ <strong>The Pain Point:</strong> Generic uniforms that don't match the youthful vibe.
+ <br><br>
+ <strong>The Solution:</strong> Modern cuts, street-inspired aprons (The Berkeley), and custom embroidery that resonates with your millennial and Gen Z workforce.
+ </p>
+ </div>
+ </div>
+ </div>
+ </section>
+
+ <!-- ROI Calculator -->
+ <section class="bg-chipotle-brown text-white py-20 texture-bg">
+ <div class="container mx-auto px-6">
+ <div class="grid md:grid-cols-2 gap-12 items-center">
+ <div>
+ <h2 class="font-display text-4xl font-bold uppercase mb-6">The Value of Quality</h2>
+ <p class="text-lg mb-6 text-gray-300">
+ Cheap uniforms need replacing every 3 months. Chef Works gear is built to last. See how much Chipotle can save by switching to higher-durability apparel that reduces replenishment cycles.
+ </p>
+ <ul class="space-y-4 mb-8">
+ <li class="flex items-center space-x-3">
+ <i data-lucide="check-circle"class="text-chipotle-red"></i>
+ <span>Reduced annual replacement costs</span>
+ </li>
+ <li class="flex items-center space-x-3">
+ <i data-lucide="check-circle"class="text-chipotle-red"></i>
+ <span>Higher employee retention via improved comfort</span>
+ </li>
+ <li class="flex items-center space-x-3">
+ <i data-lucide="check-circle"class="text-chipotle-red"></i>
+ <span>Elevated brand perception</span>
+ </li>
+ </ul>
+ </div>
+
+ <div class="bg-white text-chipotle-dark p-8 rounded-lg shadow-2xl">
+ <h3 class="font-display text-2xl font-bold uppercase mb-6 text-center">Uniform Lifecycle Calculator</h3>
+ <div class="mb-6">
+ <label class="block text-sm font-bold mb-2 uppercase tracking-wide">Number of Staff / Crew Members</label>
+ <input type="number"id="staffInput"placeholder="e.g. 5000"class="w-full p-4 border-2 border-gray-300 rounded focus:border-chipotle-red focus:outline-none text-xl">
+ </div>
+ <div class="bg-chipotle-cream p-6 rounded border border-gray-200 text-center">
+ <p class="text-sm text-gray-500 uppercase font-bold mb-2">Projected Annual Brand Equity & Savings</p>
+ <div id="savingsResult"class="text-5xl font-display font-bold text-chipotle-green">$0</div>
+ <p class="text-xs text-gray-400 mt-2">*Based on avg. $150 savings per head on durability vs. fast-fashion alternatives.</p>
+ </div>
+ </div>
+ </div>
+ </div>
+ </section>
+
+ <!-- Sustainability / Cultivate Foundation Alignment -->
+ <section class="py-20 bg-white">
+ <div class="container mx-auto px-6">
+ <div class="flex flex-col md:flex-row items-center">
+ <div class="md:w-1/2 mb-10 md:mb-0 md:pr-12">
+ <div class="inline-block bg-chipotle-green text-white px-3 py-1 font-bold text-xs uppercase tracking-widest mb-4 rounded">Sustainability</div>
+ <h2 class="font-display text-4xl font-bold text-chipotle-brown uppercase mb-6">Cultivating a Better World, Together</h2>
+ <p class="text-lg text-gray-700 mb-6">
+ Chipotle isn't just about food; it's about the <strong>Cultivate Foundation</strong> and making ethical choices. Chef Works shares this DNA.
+ </p>
+ <p class="text-lg text-gray-700 mb-8">
+ Our <strong>RE: Collection</strong> uses recycled plastic bottles to create high-performance fabrics. By partnering with Chef Works, Chipotle extends its sustainability mission from the farm to the uniform.
+ </p>
+ <div class="flex items-center space-x-4">
+ <div class="text-center">
+ <span class="block font-display text-3xl font-bold text-chipotle-green">10M+</span>
+ <span class="text-xs uppercase font-bold text-gray-500">Bottles Recycled</span>
+ </div>
+ <div class="h-10 w-px bg-gray-300"></div>
+ <div class="text-center">
+ <span class="block font-display text-3xl font-bold text-chipotle-green">100%</span>
+ <span class="text-xs uppercase font-bold text-gray-500">Ethical Sourcing</span>
+ </div>
+ </div>
+ </div>
+ <div class="md:w-1/2 relative">
+ <div class="bg-chipotle-red absolute -top-4 -left-4 w-full h-full rounded opacity-10"></div>
+ <img src="https://images.unsplash.com/photo-1556910103-1c02745a30bf?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"alt="Chef holding fresh vegetables"class="rounded shadow-lg relative z-10 w-full object-cover h-96 grayscale hover:grayscale-0 transition duration-500">
+ </div>
+ </div>
+ </div>
+ </section>
+
+ <!-- CTA Section -->
+ <section id="contact"class="bg-chipotle-dark py-24 text-center">
+ <div class="container mx-auto px-6">
+ <h2 class="font-display text-4xl md:text-5xl font-bold text-white uppercase mb-6">Ready to Suit Up?</h2>
+ <p class="text-gray-400 text-xl mb-10 max-w-2xl mx-auto">
+ Experience the difference of "Apparel with Integrity."Request a personalized sample kit curated specifically for the Chipotle team.
+ </p>
+ <form class="max-w-md mx-auto space-y-4">
+ <input type="email"placeholder="Enter your work email"class="w-full p-4 rounded bg-gray-800 border border-gray-700 text-white focus:border-chipotle-red focus:outline-none">
+ <button type="button"class="w-full bg-chipotle-red hover:bg-red-700 text-white font-display font-bold uppercase tracking-wider py-4 px-8 rounded shadow-lg transition duration-300">
+ Request Sample Kit
+ </button>
+ </form>
+ </div>
+ </section>
+
+ <!-- Footer -->
+ <footer class="bg-black text-gray-500 py-8 text-center text-sm">
+ <div class="container mx-auto">
+ <p>&copy; 2023 Chef Works x Chipotle Partnership Proposal. All rights reserved.</p>
+ </div>
+ </footer>
+
+ <script>
+ // Initialize Lucide Icons
+ lucide.createIcons();
+
+ // Calculator Logic
+ const staffInput = document.getElementById('staffInput');
+ const savingsResult = document.getElementById('savingsResult');
+
+ staffInput.addEventListener('input', function(e) {
+ const count = parseInt(e.target.value) || 0;
+ // Logic: $150 savings per head based on longevity vs cheap alternatives
+ const savings = count * 150;
+ savingsResult.innerText = '$' + savings.toLocaleString();
+ });
+ </script>
+</body>
+</html>
